@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="luffi.com.itemu.ResponKehilangan"
+    tools:showIn="@layout/respon_kehilangan">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.04"
+            android:weightSum="1">
+
+            <ImageView
+                android:layout_width="166dp"
+                android:layout_height="70dp"
+                android:id="@+id/imageView"
+                android:src="@drawable/pengguna"
+                />
+
+            <RelativeLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="75dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Luffi Aditya Sandy"
+                    android:id="@+id/textView" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sab, 1 Januari 2016"
+                    android:id="@+id/textView2"
+                    android:textSize="10sp"
+                    android:layout_below="@+id/textView"
+                    android:layout_alignParentStart="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="make a call"
+                    android:id="@+id/textView3"
+                    android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="388dp"
+            android:layout_marginTop="20dp"
+            >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Deskripsi"
+                android:id="@+id/textView4"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_centerHorizontal="true" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:id="@+id/imageView2"
+                android:src="@drawable/bananalezat"
+                android:layout_marginTop="23dp"
+                android:layout_below="@+id/textView4"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Two out of three Americans polled said they think Trump is unqualified to lead the nation, are anxious about the idea of him as president and disapprove of his comments on women, Muslims and his repeated attacks on a federal judge because of his heritage."
+                android:id="@+id/textView5"
+                android:textSize="15dp"
+                android:layout_marginTop="23dp"
+                android:layout_below="@+id/imageView2"
+                android:layout_alignParentStart="true" />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#33cccc"
+        >
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText"
+            android:layout_toLeftOf="@+id/button"
+            android:textColorHighlight="#000000"
+            android:textColor="@android:color/white"
+            android:textColorLink="@android:color/holo_blue_dark"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Send"
+            android:id="@+id/button"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+</RelativeLayout>

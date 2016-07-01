@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="luffi.com.itemu.FormKehilangan"
+    tools:showIn="@layout/form_kehilangan"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/atas"
+        >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+
+    >
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Data Kehilangan"
+        android:id="@+id/textView11"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="15dp"/>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:id="@+id/layout_email">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="nama barang"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:id="@+id/editText2"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:id="@+id/layout_kontak">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:hint="kontak telepon"
+            android:id="@+id/editText3"/>
+    </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:id="@+id/layout_deskripsi">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:maxHeight="90dp"
+                android:inputType="textMultiLine"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:hint="deskripsi"
+                android:id="@+id/editText4"
+                android:gravity="start"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:hint=".jpg .png .jpeg"
+            android:id="@+id/textView6"
+            android:layout_toLeftOf="@+id/button2"
+             />
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="upload foto"
+            android:id="@+id/button2"
+            android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:textSize="15dp"
+            android:gravity="bottom"
+            android:text="Jalan Raya ITS"
+            android:id="@+id/textView9"
+            android:layout_toLeftOf="@+id/button3"
+            android:textStyle="bold"
+            />
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="pilih lokasi"
+            android:id="@+id/button3"
+            android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Jarak Broadcast"
+            android:id="@+id/textView8"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:textStyle="bold"
+            android:textSize="15dp"/>
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner"
+            android:padding="5dp"
+            android:layout_toRightOf="@+id/textView8"
+            />
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>
+
+
+
+    </ScrollView>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:text="kirim"
+        android:layout_below="@+id/atas"
+        android:id="@+id/kirim_post"/>
+
+
+</RelativeLayout>
