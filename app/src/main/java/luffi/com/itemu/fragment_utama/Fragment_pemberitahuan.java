@@ -7,7 +7,10 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ListView;
 
+import luffi.com.itemu.AdapterListPemberitahuan;
+import luffi.com.itemu.CustomList;
 import luffi.com.itemu.R;
 
 /**
@@ -25,8 +28,11 @@ public class Fragment_pemberitahuan extends Fragment {
     private static final String ARG_PARAM2 = "param2";
 
     // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
+
+
+    private View view;
+    private ListView list;
+    String [] nama = {"Luffi aditya sandy","Ridho perdana", "Riska Adhita"};
 
 
     public Fragment_pemberitahuan() {
@@ -52,17 +58,21 @@ public class Fragment_pemberitahuan extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
+
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+
+        view = inflater.inflate(R.layout.fragment_fragment_pemberitahuan,container,false);
+
+
+        AdapterListPemberitahuan listAdapter= new AdapterListPemberitahuan(getActivity(),R.layout.item_pemberitahuan,nama);
+        list = (ListView)view.findViewById(R.id.listPemberitahuan);
+        list.setAdapter(listAdapter);
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_fragment_pemberitahuan, container, false);
+        return view;
     }
 
 

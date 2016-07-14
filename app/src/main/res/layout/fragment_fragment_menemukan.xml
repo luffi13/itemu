@@ -1,5 +1,6 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="luffi.com.itemu.fragment_utama.Fragment_menemukan"
@@ -11,6 +12,8 @@
         android:layout_height="wrap_content"
         android:id="@+id/listDitemukan"
         android:background="#e6e6e6"
+        android:divider="#d0b6af"
+        android:dividerHeight="5.0sp"
         >
     </ListView>
     <android.support.design.widget.FloatingActionButton
@@ -21,6 +24,7 @@
         android:layout_alignParentRight="true"
         android:layout_margin="@dimen/fab_margin"
         android:src="@android:drawable/ic_input_add"
-        android:background="@android:color/holo_blue_dark"/>
+        app:backgroundTint="@color/coklat"
+        android:tint="@color/kuning"/>
 
 </RelativeLayout>

@@ -2,6 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".fragment_utama.Fragment_kehilangan"
     android:paddingBottom="?android:attr/actionBarSize">
 
@@ -11,7 +12,8 @@
         android:layout_height="wrap_content"
         android:id="@+id/listBaru"
         android:background="#e6e6e6"
-        >
+        android:divider="#d0b6af"
+        android:dividerHeight="5.0sp">
     </ListView>
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab1"
@@ -19,7 +21,9 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
+        app:backgroundTint="@color/coklat"
         android:layout_margin="@dimen/fab_margin"
-        android:src="@android:drawable/ic_input_add" />
+        android:src="@android:drawable/ic_input_add"
+        android:tint="@color/kuning"/>
 
 </RelativeLayout>

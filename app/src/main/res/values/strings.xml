@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">Itemu</string>
     <string name="action_settings">Settings</string>
+    <string name="lihatItem"><u>Lihat Semua Item Saya</u></string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
@@ -18,5 +19,7 @@
 
     </string-array>
     <string name="title_activity_test">Test</string>
+    <string name="title_activity_adapter_list_pemberitahuan">AdapterListPemberitahuan</string>
+    <string name="title_activity_pemberitahuan_kehilangan">PemberitahuanKehilangan</string>
 
 </resources>

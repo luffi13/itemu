@@ -1,4 +1,4 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -7,7 +7,23 @@
     <!-- TODO: Update blank fragment layout -->
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="pemberitahuan" />
+        android:layout_height="wrap_content"
+        android:text="@string/lihatItem"
+        android:padding="8dp"
+        android:id="@+id/lihatSemuaItem"
+        android:textColor="@color/coklat"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textSize="16dp"
+        android:background="#f6f0ef"
 
-</FrameLayout>
+        />
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/listPemberitahuan"
+        android:layout_below="@+id/lihatSemuaItem">
+
+    </ListView>
+
+</RelativeLayout>

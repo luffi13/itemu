@@ -28,6 +28,8 @@ public class Fragment_kehilangan extends Fragment {
     private ListView list;
     private View view;
 
+    String [] nama = {"dompet","handphone", "kunci rumah","motor","tas","koper","mobil"};
+
 
 
     public Fragment_kehilangan() {
@@ -47,7 +49,7 @@ public class Fragment_kehilangan extends Fragment {
         // Inflate the layout for this fragment
         view = inflater.inflate(R.layout.fragment_fragment_berita_utama,container,false);
 
-        String [] nama = {"barang 1","barang 2", "barang 3","barang 4","barang 5","barang 6","barang 7","barang 8"};
+
         CustomList listAdapter= new CustomList(getActivity(),R.layout.item_berita,nama);
         list = (ListView)view.findViewById(R.id.listBaru);
         list.setAdapter(listAdapter);

@@ -11,6 +11,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
 
+import luffi.com.itemu.AdapterListDitemukan;
 import luffi.com.itemu.CustomList;
 import luffi.com.itemu.FormKehilangan;
 import luffi.com.itemu.R;
@@ -36,6 +37,7 @@ public class Fragment_menemukan extends Fragment {
     private String mParam2;
     private ListView list;
     private View view;
+    String [] nama = {"ditemukan 1","ditemukan 2", "ditemukan 3","ditemukan 4","ditemukan 5","ditemukan 6","ditemukan 7","ditemukan 8"};
 
     public Fragment_menemukan() {
         // Required empty public constructor
@@ -64,8 +66,9 @@ public class Fragment_menemukan extends Fragment {
         // Inflate the layout for this fragment
         view = inflater.inflate(R.layout.fragment_fragment_menemukan,container,false);
 
-        String [] nama = {"ditemukan 1","ditemukan 2", "ditemukan 3","ditemukan 4","ditemukan 5","ditemukan 6","ditemukan 7","ditemukan 8"};
-        CustomList listAdapter= new CustomList(getActivity(),R.layout.item_berita,nama);
+
+        AdapterListDitemukan listAdapter= new AdapterListDitemukan(getActivity(),R.layout.item_berita,nama);
+
         list = (ListView)view.findViewById(R.id.listDitemukan);
         list.setAdapter(listAdapter);
 

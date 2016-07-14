@@ -28,6 +28,15 @@ public class CustomList extends ArrayAdapter<String> {
 
 
     private String[]name ;
+    //"dompet","handphone", "kunci rumah","motor","tas","koper","mobil"};
+
+    private Integer[] imageID={R.drawable.dompet,
+                                R.drawable.handphone,
+                                R.drawable.kunci,
+                                R.drawable.motor,
+                                R.drawable.tas,
+                                R.drawable.koper,
+                                R.drawable.mobil };
 
 
     public CustomList(Context context, int resource, String[] nama) {
@@ -47,6 +56,9 @@ public class CustomList extends ArrayAdapter<String> {
         TextView callNumber = (TextView)view.findViewById(R.id.callNumber);
         TextView deskripsi = (TextView)view.findViewById(R.id.description);
         ImageButton respon = (ImageButton)view.findViewById(R.id.responButton);
+        ImageView gambarBarang = (ImageView)view.findViewById(R.id.image_berita);
+
+        gambarBarang.setImageResource(imageID[position]);
 
         respon.setOnClickListener(new View.OnClickListener() {
             @Override

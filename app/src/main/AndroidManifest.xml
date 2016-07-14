@@ -7,16 +7,19 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+        android:largeHeap="true">
         <activity
             android:name=".Menu_Utama"
             android:label="Itemu"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/AppTheme.NoActionBar"
+            android:largeHeap="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
         <activity
             android:name=".ResponKehilangan"
@@ -30,7 +33,11 @@
             android:name=".FormKehilangan"
             android:label="@string/title_activity_form_kehilangan"
             android:theme="@style/AppTheme.NoActionBar"
-            android:windowSoftInputMode="stateVisible|adjustResize">
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity
+            android:name=".PemberitahuanKehilangan"
+            android:label="@string/title_activity_pemberitahuan_kehilangan"
+            android:theme="@style/AppTheme.NoActionBar">
 
         </activity>
     </application>

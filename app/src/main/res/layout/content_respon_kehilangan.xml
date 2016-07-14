@@ -68,6 +68,7 @@
             android:layout_width="match_parent"
             android:layout_height="388dp"
             android:layout_marginTop="20dp"
+
             >
 
 
@@ -84,7 +85,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="50dp"
                 android:id="@+id/imageView2"
-                android:src="@drawable/bananalezat"
+                android:src="@drawable/handphone"
                 android:layout_marginTop="23dp"
                 android:layout_below="@+id/textView4"
                 android:layout_alignParentStart="true" />
@@ -93,7 +94,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="Two out of three Americans polled said they think Trump is unqualified to lead the nation, are anxious about the idea of him as president and disapprove of his comments on women, Muslims and his repeated attacks on a federal judge because of his heritage."
+                android:text="saya kehilangan sebuah handphone dengan merk XXX tipe XXX . ciri-ciri barang memiliki stiker di ITS dibagian belakang dan terdapat goresan dibagian bawah handphone. saya kehilangan di daerah sukolilo sekitar pukul 16.00. bagi yang menemukan harap bisa menghubungi saya. terimakasih "
                 android:id="@+id/textView5"
                 android:textSize="15dp"
                 android:layout_marginTop="23dp"
@@ -109,7 +110,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:background="#33cccc"
+        android:background="@color/kuning"
         >
 
 
